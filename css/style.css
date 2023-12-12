@@ -308,7 +308,7 @@ ol {
 	display: inline-block;
 }
 
-.nav-menu {
+/* .nav-menu {
 	text-align: center;
 }
 
@@ -355,9 +355,9 @@ ol {
 
 .nav-menu ul li:last-child {
 	margin-right: 0;
-}
+} */
 /* color */
-.nav-menu ul li.active>a {
+/* .nav-menu ul li.active>a {
 	color: var(--colorp);
 }
 
@@ -408,7 +408,7 @@ ol {
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
-}
+} */
 
 .top-option {
 	text-align: right;
