@@ -173,6 +173,10 @@
 
 })(jQuery);
 
+//NavBar
+const dropdownElementList = document.querySelectorAll('.dropdown-toggle')
+const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootstrap.Dropdown(dropdownToggleEl))
+
 // Play Video 
 
 const clip = document.querySelectorAll(".hover-to-play");

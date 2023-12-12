@@ -1,8 +1,8 @@
 html,
 body {
 
-	--colorp:rgb(54 15 211);
-	--colors:rgb(49 15 189);
+	--colorp:rgb(132, 135, 139);
+	--colors:rgb(227, 177, 50);
 	height: 100%;
 	font-family: "Muli", sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -167,39 +167,39 @@ ol {
 	top: 0;
 	left: 0;
 	z-index: 999999;
-	background: #000;
+	background: linear-gradient(#000000,#080808,#272626);
 }
 
 .loader {
 	width: 40px;
-	height: 40px;
+	height: 2px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	margin-top: -13px;
 	margin-left: -13px;
-	border-radius: 60px;
-	animation: loader 0.8s linear infinite;
-	-webkit-animation: loader 0.8s linear infinite;
+	border-radius: 52px;
+	animation: loader 0.12s linear infinite;
+	-webkit-animation: loader 0.12s linear infinite;
 }
 
 @keyframes loader {
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
-		border: 4px solid #131314;
+		border: 4px solid #c0c0cd;
 		border-left-color: transparent;
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
-		border: 4px solid #22221f;
+		border: 4px solid #dfdfda;
 		border-left-color: transparent;
 	}
 	100% {
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
-		border: 4px solid #16191d;
+		border: 4px solid #d8e0eb;
 		border-left-color: transparent;
 	}
 }
@@ -207,17 +207,17 @@ ol {
 @-webkit-keyframes loader {
 	0% {
 		-webkit-transform: rotate(0deg);
-		border: 4px solid #131314;
+		border: 4px solid #c0c0cd;
 		border-left-color: transparent;
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
-		border: 4px solid #22221f;
+		border: 4px solid #dfdfda;
 		border-left-color: transparent;
 	}
 	100% {
 		-webkit-transform: rotate(360deg);
-		border: 4px solid #16191d;
+		border: 4px solid #d8e0eb;
 		border-left-color: transparent;
 	}
 }
@@ -834,6 +834,7 @@ ol {
 	-webkit-transform: skewY(0deg);
 	-ms-transform: skewY(0deg);
 	transform: skewY(0deg);
+	text-decoration: none;
 }
 
 .ps-item .thumb-icon {
@@ -957,7 +958,8 @@ ol {
 	margin-top: 10px;
 }
 
-.ts-slider .col-lg-4 {
+.ts-slider .mycol-lg-4 {
+	flex:0 0 auto;
 	max-width: 100%;
 }
 
@@ -3229,6 +3231,12 @@ ol {
 		font-size: 28px;
 	}
 }
+
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: 0; /* remove the gap so it doesn't close */
+  }
 
 /*
 -------------    ---------------
